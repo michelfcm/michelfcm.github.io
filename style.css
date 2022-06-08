@@ -1,3 +1,4 @@
+/* GLOBAL */
 body {
     margin: 0px;
     background-color: #f5f5f5;
@@ -30,6 +31,24 @@ a {
     padding: 20px 20px;
 }
 
+.titulo-secao {
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #525252;
+}
+
+.badge {
+    line-height: 1;
+    display: inline-block;
+    border: 1px solid #262626;
+    padding: 5px 10px;
+    margin-right: 4px;
+}
+
+/* FIM GLOBAL */
+
+/* HEADER */
+
 .header {
     display: flex;
     align-items: center;
@@ -40,6 +59,10 @@ a {
 .menu {
     display: flex;
     gap: 40px;
+}
+
+.menu a {
+    padding: 10px 0px;
 }
 
 .menu a::after {
@@ -59,6 +82,10 @@ a {
     font-size: 32px;
 }
 
+/* FIM HEADER */
+
+/* INTRO */
+
 .intro {
     text-align: center;
     margin-bottom: 180px;
@@ -77,6 +104,10 @@ a {
     font-weight: regular;
 }
 
+/* FIM INTRO */
+
+/* PROJETOS */
+
 .img {
     /* display: block; */
     width: 360px;
@@ -91,12 +122,6 @@ a {
     margin-bottom: 80px;
 }
 
-.titulo-secao {
-    font-weight: 300;
-    margin-bottom: 20px;
-    color: #525252;
-}
-
 .projetos-item {
     max-width: 360px;
 }
@@ -109,6 +134,10 @@ a {
     font-size: 16px;
     margin-bottom: 16px;
 }
+
+/* FIM PROJETOS */
+
+/* SOBRE */
 
 .sobre {
     display: grid;
@@ -133,13 +162,9 @@ a {
     max-width: 100%;
 }
 
-.badge {
-    line-height: 1;
-    display: inline-block;
-    border: 1px solid #262626;
-    padding: 5px 10px;
-    margin-right: 4px;
-}
+/* FIM SOBRE */
+
+/* FOOTER */
 
 .footer-bg {
     background-color: #262626;
@@ -150,7 +175,6 @@ a {
 footer .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #262626;
     color: #f5f5f5;
     align-items: flex-end;
     gap: 60px 0px;
@@ -178,15 +202,4 @@ footer p {
     justify-self: end;
 }
 
-@media (max-width: 1440px) {
-    .projetos {
-        justify-content: center;
-        gap: 80px;
-    }
-}
-
-@media (max-width: 1100px) {
-    .projetos {
-        gap: 20px;
-    }
-}
+/* FIM FOOTER */
