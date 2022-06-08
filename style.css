@@ -1,0 +1,192 @@
+body {
+    margin: 0px;
+    background-color: #f5f5f5;
+    color: #262626;
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 180px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 1px;
+    background-color: #262626;
+    transition: 0.3s;
+}
+
+.menu a:hover:after {
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 32px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 180px;
+}
+
+.intro h2 {
+    font-size: 48px;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 36px;
+    line-height: 1.35;
+    font-weight: regular;
+}
+
+.img {
+    /* display: block; */
+    width: 360px;
+    height: 250px;
+    background-color: black;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.titulo-secao {
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #525252;
+}
+
+.projetos-item {
+    max-width: 360px;
+}
+
+.projetos-item h3 {
+    font-size: 24px;
+}
+
+.projetos-item p {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    padding: 0px 100px;
+    margin-bottom: 100px;
+}
+
+.sobre p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.foto-sobre {
+    width: 300px;
+    height: 312px;
+    justify-self: flex-end;
+}
+
+.foto-sobre img {
+    max-width: 100%;
+}
+
+.badge {
+    line-height: 1;
+    display: inline-block;
+    border: 1px solid #262626;
+    padding: 5px 10px;
+    margin-right: 4px;
+}
+
+.footer-bg {
+    background-color: #262626;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #262626;
+    color: #f5f5f5;
+    align-items: flex-end;
+    gap: 60px 0px;
+}
+
+footer p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.local {
+    justify-self: start;
+    display: flex;
+    gap: 4px;
+}
+
+.email {
+    font-size: 36px;
+    font-weight: 600;
+    align-self: center;
+    justify-self: end;
+}
+
+.icone {
+    justify-self: end;
+}
+
+@media (max-width: 1440px) {
+    .projetos {
+        justify-content: center;
+        gap: 80px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .projetos {
+        gap: 20px;
+    }
+}
