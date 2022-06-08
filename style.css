@@ -24,6 +24,12 @@ a {
     color: inherit;
 }
 
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 .container {
     max-width: 1200px;
     box-sizing: border-box;
@@ -45,6 +51,12 @@ a {
     margin-right: 4px;
 }
 
+@media (max-width: 300px) {
+    * {
+        font-size: 1rem !important;
+    }
+}
+
 /* FIM GLOBAL */
 
 /* HEADER */
@@ -56,8 +68,13 @@ a {
     margin-bottom: 180px;
 }
 
+.header h1 {
+    font-size: 32px;
+}
+
 .menu {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -78,10 +95,20 @@ a {
     width: 100%;
 }
 
-.header h1 {
-    font-size: 32px;
+@media (max-width: 976px) {
+    .header {
+        margin-bottom: 120px;
+    }
+    .header h1 {
+        font-size: 24px;
+    }
 }
 
+@media (max-width: 480px) {
+    .header {
+        margin-bottom: 80px;
+    }
+}
 /* FIM HEADER */
 
 /* INTRO */
@@ -104,12 +131,28 @@ a {
     font-weight: regular;
 }
 
+@media (max-width: 976px) {
+    .intro {
+        margin-bottom: 120px;
+    }
+    .intro h2 {
+        font-size: 32px;
+    }
+    .intro p {
+        font-size: 24px;
+    }
+}
+@media (max-width: 480px) {
+    .intro {
+        margin-bottom: 80px;
+    }
+}
+
 /* FIM INTRO */
 
 /* PROJETOS */
 
-.img {
-    /* display: block; */
+.projeto-foto {
     width: 360px;
     height: 250px;
     background-color: black;
@@ -132,7 +175,26 @@ a {
 
 .projetos-item p {
     font-size: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 1210px) {
+    .projetos {
+        gap: 40px 20px;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 976px) {
+    .projetos-item h3 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 396px) {
+    .projeto-foto {
+        width: 260px;
+        height: 180px;
+    }
 }
 
 /* FIM PROJETOS */
@@ -155,11 +217,28 @@ a {
 .foto-sobre {
     width: 300px;
     height: 312px;
-    justify-self: flex-end;
+    justify-self: center;
 }
 
-.foto-sobre img {
-    max-width: 100%;
+@media (max-width: 976px) {
+    .sobre {
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+    .foto-sobre {
+        grid-row: 1;
+        margin-bottom: 20px;
+    }
+    .sobre p {
+        font-size: 20px;
+        text-align: center;
+    }
+    @media (max-width: 396px) {
+        .foto-sobre {
+            width: 240px;
+            height: 250px;
+        }
+    }
 }
 
 /* FIM SOBRE */
@@ -177,7 +256,7 @@ footer .container {
     grid-template-columns: 1fr 1fr;
     color: #f5f5f5;
     align-items: flex-end;
-    gap: 60px 0px;
+    gap: 60px 20px;
 }
 
 footer p {
@@ -185,10 +264,13 @@ footer p {
     line-height: 1.5;
 }
 
-.local {
-    justify-self: start;
-    display: flex;
-    gap: 4px;
+.local::before {
+    content: "";
+    width: 12px;
+    height: 16px;
+    background-image: url("./img/local-icon.svg");
+    display: inline-block;
+    margin-right: 4px;
 }
 
 .email {
@@ -200,6 +282,45 @@ footer p {
 
 .icone {
     justify-self: end;
+}
+
+@media (max-width: 976px) {
+    footer p {
+        font-size: 16px;
+    }
+    .email {
+        font-size: 32px;
+    }
+}
+@media (max-width: 768px) {
+    footer p {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+    .email {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+}
+@media (max-width: 480px) {
+    .email {
+        font-size: 24px;
+    }
+    .local {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+    .icone {
+        grid-column: 1 / -1;
+        justify-self: center;
+        grid-row: 3;
+    }
+}
+@media (max-width: 396px) {
+    .foto-sobre {
+        width: 240px;
+        height: 250px;
+    }
 }
 
 /* FIM FOOTER */
