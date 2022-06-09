@@ -159,6 +159,7 @@ nav {
 @media (max-width: 480px) {
     .header {
         margin-bottom: 80px;
+        grid-template-columns: 3fr 1fr;
     }
 }
 /* FIM HEADER */
