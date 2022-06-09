@@ -14,11 +14,10 @@
     <header class="container">
         <div class="header">
             <h1>Michel Mingroni</h1>
-            <input type="checkbox" id="check">
-            <label id="menu-icone" for="check"><img src="./img/menu-mobile.svg" alt=""></label>
-            <!-- <span class="icone-mobile"></span> -->
-            <nav>
-                <ul class="menu">
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburger"></span></button>
+                <ul id="menu" role="menu">
                     <li>
                         <a href="#projetos">Projetos</a>
                     </li>
@@ -128,6 +127,7 @@
         </div>
     </footer>
 
+    <script src="./script.js"></script>
 </body>
 
 </html>
