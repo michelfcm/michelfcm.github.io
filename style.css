@@ -338,7 +338,16 @@ footer p {
     justify-self: end;
 }
 
+.lista-icone {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
 .icone {
+    display: block;
+    width: 50px;
+    height: 50px;
     justify-self: end;
 }
 
@@ -368,7 +377,7 @@ footer p {
         grid-column: 1 / -1;
         justify-self: center;
     }
-    .icone {
+    .lista-icone {
         grid-column: 1 / -1;
         justify-self: center;
         grid-row: 3;
