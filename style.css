@@ -210,12 +210,6 @@ img {
 
 /* PROJETOS */
 
-.projeto-foto {
-    width: 360px;
-    height: 250px;
-    background-color: black;
-}
-
 .projetos {
     display: flex;
     flex-wrap: wrap;
@@ -249,9 +243,8 @@ img {
     }
 }
 @media (max-width: 396px) {
-    .projeto-foto {
-        width: 260px;
-        height: 180px;
+    .projetos-item {
+        max-width: 260px;
     }
 }
 
